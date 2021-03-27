@@ -10,6 +10,9 @@ namespace MarsRoverNasaSimulationTest
     public class NasaSimulationTest
     {
         #region simuation tests
+        /// <summary>
+        /// test senario 1
+        /// </summary>
         [TestMethod]
         public void TestSenario_12N_LMLMLMLMM()
         {
@@ -17,7 +20,9 @@ namespace MarsRoverNasaSimulationTest
             var actualOutput = simulateRover(new RoverPosition(1, 2, Direction.N), "LMLMLMLMM", 5, 5);
             Assert.AreEqual(expectedOutput, actualOutput);
         }
-
+        /// <summary>
+        /// test senario 2
+        /// </summary>
         [TestMethod]
         public void TestSenario_33E_MMRMMRMRRM()
         {
@@ -29,6 +34,9 @@ namespace MarsRoverNasaSimulationTest
         #endregion
 
         #region direction calculate tests
+        /// <summary>
+        /// direction rotate test
+        /// </summary>
         [TestMethod]
         public void TestSenario_DirectionN_TurnLeft()
         {
